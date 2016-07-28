@@ -39,7 +39,7 @@ html,body
       .intro-header
         .into-header-text
           color: #242424
-          font-size: 7em
+          font-size: 4.5em
           word-break: break-word
           line-height: 150px
       .caption
@@ -50,7 +50,6 @@ html,body
           display: block
           margin-left: auto
           margin-right: auto
-          padding-top: 5%
           padding-bottom: 5%
         .intro-date
           line-height: 2em
@@ -233,6 +232,11 @@ html,body
         .content-header
           text-align: center
           letter-spacing: 5px
+        .intro-date-text
+          position: absolute
+          right: 0
+          top: 0
+          height: 110px
         #form-content
           max-width: 80%
           margin-left: inherit
@@ -248,20 +252,23 @@ html,body
               border-radius: 25px
               border: 2px solid #dbb868
               padding: 20px
-              height: 60px
+              height: 65px
               background-color: transparent
               box-shadow: none
               -webkit-appearance: none
               margin-bottom: 45px
           .content-button-container
             .submit-button
-              outline: none
-              background: transparent
-              border: 1px solid #a4a4a4
-              display: inline-block
-              padding: 20px 30px
-              margin-top: 30px
-              font-size: 1.5em
+              display: block
+              border-radius: 25px
+              border: transparent
+              padding: 20px
+              height: 65px
+              width: 100%
+              background-color: #dbb868
+              box-shadow: none
+              -webkit-appearance: none
+              margin-bottom: 45px
 
 
 
@@ -429,7 +436,7 @@ html,body
     height: auto
     .section-container
       .left-section
-        background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8) ), url('img/the-beginning-bg.jpg')
+        background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8) ), url('img/save-the-date-bg.jpg')
         background-repeat: no-repeat
         background-size: cover
         background-position: center center
@@ -537,7 +544,7 @@ html,body
       .right-section
         .content-container
           .content-header
-            font-size: 3.5em
+            font-size: 2em
 
   #rsvp
     .section-container
@@ -548,7 +555,11 @@ html,body
       .right-section
         .content-container
           padding: 100px 0
+          .intro-date-text
+            top: 90px
+            height: 90px
           #form-content
+            max-width: 100%
             .content-button-container
               .submit-button
                 font-size: 1em
