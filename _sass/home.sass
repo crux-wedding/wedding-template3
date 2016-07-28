@@ -340,6 +340,7 @@ html,body
               font-size: 1.2em
               text-align: justify
 
+
   #wedding-detail
     .section-container
       .left-section
@@ -351,7 +352,6 @@ html,body
             .content-text
               font-size: 1.2em
               text-align: justify
-
 
   #rsvp
     .section-container
@@ -432,6 +432,7 @@ html,body
           .content-description
             max-width: 90%
             margin-top: 30px
+
   #wedding-detail
     height: auto
     .section-container
@@ -464,6 +465,7 @@ html,body
             letter-spacing: 10px
             line-height: 2em
           .content-description
+            text-align: justify
             max-width: 90%
             margin: 30px auto 0
             color: #777777
@@ -488,23 +490,27 @@ html,body
 
 @media (max-width: 568px)
   #cover
+    height: auto
+
     .container
       .intro-text-container
         top: 0
         transform: none
-        padding: 100px 0 50px
+        padding: 50px 0
         .intro-header
           text-align: center
           .into-header-text
+            font-size: 3.2em
             text-align: center
             width: 100%
         .caption
           text-align: center
           img
-            padding-top: 15%
-            padding-bottom: 15%
-          .intro-date
-            font-size: 12px
+            padding: 15px 0
+            width: 90%
+          .intro-date-text
+            font-size: 24px
+            text-align: center
           .intro-location
             font-size: 18px
             margin-top: 5px
@@ -516,7 +522,10 @@ html,body
           padding: 100px 0
           .content-header
             font-size: 2.5em
+            line-height: 50px
       .right-section
+        padding-left: 15px
+        padding-right: 15px
         .content-container
           .content-header
             font-size: 2em
@@ -545,6 +554,9 @@ html,body
         .content-container
           .content-header
             font-size: 2em
+          .content-description
+            padding-left: 15px
+            padding-right: 15px
 
   #rsvp
     .section-container
