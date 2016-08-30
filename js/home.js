@@ -98,12 +98,11 @@ main.onMenuClick = function(){
             }
         });
     }
-
 };
 
 main.onNavbarScroll = function(){
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 50 && $(document).width() >= 992) {
+        if ($(document).scrollTop() > 20 && $(document).width() >= 992) {
             $('nav').addClass('navbar-shrink');
         }
 
@@ -116,7 +115,7 @@ main.onNavbarScroll = function(){
     });
 
     $(document).ready(function () {
-        if ($(document).scrollTop() > 50 && $(document).width() >= 992) {
+        if ($(document).scrollTop() > 20 && $(document).width() >= 992) {
             $('nav').addClass('navbar-shrink');
         }
 

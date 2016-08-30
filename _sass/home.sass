@@ -311,8 +311,6 @@ html,body
         object-fit: cover
         object-position: 50% 50%
 
-
-
 #rsvp
   position: relative
   padding-top: 50px
@@ -320,7 +318,7 @@ html,body
   background-color: #f8eef8
   .section-header
     display: table
-    margin: 0 auto
+    margin: 0 auto 30px
     .section-image
       display: inline-block
       height: 50px
@@ -370,8 +368,6 @@ html,body
         border: none
         background-color: #5e4da3
 
-
-
 .modal.fade
   .modal-dialog
     position: absolute
@@ -379,11 +375,9 @@ html,body
     left: 0
     right: 0
     opacity: 0
-    -webkit-transform: translateY(-40%)
     -ms-transform: translateY(-40%)
     -o-transform: translateY(-40%)
     transform: translateY(-40%)
-    -webkit-transition: all 0.3s ease
     -moz-transition: all 0.3s ease
     -o-transition: all 0.3s ease
     transition: all 0.3s ease
@@ -395,7 +389,6 @@ html,body
     position: absolute
     top: 40%
     opacity: 1
-    -webkit-transform: translateY(-40%)
     -ms-transform: translateY(-40%)
     -o-transform: translateY(-40%)
     transform: translateY(-40%)
@@ -416,268 +409,119 @@ html,body
 
 @media (max-width: 1440px)
   #cover
-    .container
-      .intro-text-container
+    .container-fluid
+      .intro-cover
+        background-size: 60%
         .intro-header
-          .into-header-text
-            text-align: center
-            font-size: 3em
-            line-height: 100px
-        .caption
-          .intro-date
-            font-size: 24px
-          .intro-location
-            font-size: 24px
+          .intro-text
+            font-size: 28px
+        .intro-couple
+          .intro-text
+            font-size: 58px
 
-  #the-beginning
-    .section-container
-      .right-section
-        .content-container
-          .content-header
-            font-size: 2em
-          .content-description
-            .content-text
-              font-size: 1.2em
-              text-align: justify
-
-
-  #wedding-detail
+  #our-story
+    height: auto
     .section-container
       .left-section
+        min-height: 100vh
+        height: auto
+        padding-top: 50px
+        padding-bottom: 50px
         .content-container
-          .content-header
-            font-size: 2.5em
-            line-height: 2em
-          .content-description
-            .content-text
-              font-size: 1.2em
-              text-align: justify
-
-  #rsvp
-    .section-container
+          top: 0
+          transform: none
+          -ms-transform: none
+          -o-transform: none
       .right-section
+        min-height: 100vh
+        padding-top: 50px
+        padding-bottom: 50px
+        height: auto
         .content-container
-          #form-content
-            .form-item
-              .content-title
-                font-size: 1.5em
+          top: 0
+          transform: none
+          -ms-transform: none
+          -o-transform: none
+
+@media (max-width: $screen-md-max)
+  #cover
+    .container-fluid
+      .intro-cover
+        background-size: 70%
+        .intro-header
+          .intro-text
+            font-size: 24px
+        .intro-couple
+          margin: 30px 0
+          .intro-text
+            font-size: 48px
+        .intro-date
+          .intro-text
+            font-size: 22px
 
 @media (max-width: $screen-sm-max)
   #cover
-    .container
-      .intro-text-container
-        .intro-header
-          .into-header-text
-            text-align: center
-            align: center
-            font-size: 6em
-            line-height: 150px
+    .container-fluid
+      .intro-cover
+        background-size: 95%
+        .intro-couple
+          .intro-text
+            font-size: 54px
 
-  #the-beginning
+  #our-story
     .section-container
       .left-section
-        .content-container
-          .content-header
-            width: 75%
-
-  #wedding-detail
-    .section-container
-      .right-section
-        .content-container
-          .content-header
-            width: 40%
-
-  #rsvp
-    .section-container
-      .left-section
-        .content-container
-          .content-header
-            width: 85%
-      .right-section
-        .content-container
-          #form-content
-            .form-item
-              .content-title
-                font-size: 1.5em
-
-@media (max-width: $screen-xs-max)
-  #cover
-    .container
-      .intro-text-container
-        .intro-header
-          .into-header-text
-            text-align: center
-            font-size: 4em
-            line-height: 100px
-
-  #the-beginning
-    height: auto
-    .section-container
-      .left-section
-        height: auto
         width: 100%
-        .content-container
-          padding: 150px 0
-          top: 0
-          transform: none
+        min-height: auto
       .right-section
+        min-height: auto
         width: 100%
-        height: auto
-        padding: 30px 0
-        .content-container
-          top: 0
-          transform: none
-          .content-header
-            font-size: 2em
-          .content-description
-            max-width: 90%
-            margin-top: 30px
 
   #wedding-detail
     height: auto
     .section-container
+      padding: 30px 0
       .left-section
-        background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8) ), url('img/save-the-date-bg.jpg')
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center center
-        height: auto
         width: 100%
         .content-container
-          padding: 150px 0
+          padding: 20px 0
           top: 0
           transform: none
+          -moz-transform: none
+          -ms-transform: none
+          -o-transform: none
+          .image-text
+            height: 150px
+            position: absolute
+            left: 0
+            right: 0
+            margin-left: auto
+            margin-right: auto
+            z-index: 5
+            top: 50%
+            transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+          .overlay
+            height: 400px
+            position: absolute
+            width: 400px
+            background-color: rgba(0,0,0,0.5)
+            border-radius: 50%
+            margin-left: auto
+            margin-right: auto
+            left: 0
+            right: 0
+          .couple-image
+            margin: 30px 0
+            .section-image
+              height: 400px
+              width: 400px
           .content-header
             display: block
             margin-left: auto
             margin-right: auto
-      .right-section
-        background-image: none
-        width: 100%
-        height: auto
-        padding: 30px 0
-        background-color: #fef9d3
-        .content-container
-          top: 0
-          transform: none
-          .content-header
-            text-align: center
-            letter-spacing: 10px
-            line-height: 2em
-          .content-description
-            text-align: justify
-            max-width: 90%
-            margin: 30px auto 0
-            color: #777777
-            font-size: 1.2em
-            line-height: 2.5em
-
-  #rsvp
-    height: auto
-    .section-container
-      .left-section
-        width: 100%
-        .content-container
-          top: 0
-          transform: none
-          padding: 150px 0
-      .right-section
-        width: 100%
-        .content-container
-          top: 0
-          transform: none
-          padding: 50px 0
-
-@media (max-width: 568px)
-  #cover
-    height: auto
-
-    .container
-      .intro-text-container
-        top: 0
-        transform: none
-        padding: 50px 0
-        .intro-header
-          text-align: center
-          .into-header-text
-            font-size: 3.2em
-            text-align: center
-            width: 100%
-        .caption
-          text-align: center
-          img
-            padding: 15px 0
-            width: 90%
-          .intro-date-text
-            font-size: 24px
-            text-align: center
-          .intro-location
-            font-size: 18px
-            margin-top: 5px
-
-  #the-beginning
-    .section-container
-      .left-section
-        .content-container
-          padding: 100px 0
-          .content-header
-            font-size: 2.5em
-            line-height: 50px
-      .right-section
-        padding-left: 15px
-        padding-right: 15px
-        .content-container
-          .content-header
-            font-size: 2em
-
-  #couple
-    .section-container
-      .content-header-container
-        .content-header
-          font-size: 2.5em
-      .left-section
-        padding: 100px 0
-      .right-section
-        padding: 100px 0
-
-  #wedding-detail
-    .section-container
-      .left-section
-        .content-container
-          padding: 100px 0
-          .content-header
-            width: 30%
-            display: block
-            margin-right: auto
-            left-right: auto
-      .right-section
-        .content-container
-          .content-header
-            font-size: 2em
-          .content-description
-            padding-left: 15px
-            padding-right: 15px
-
-  #rsvp
-    .section-container
-      .left-section
-        .content-container
-          .content-header
-            font-size: 1em
-      .right-section
-        .content-container
-          padding: 100px 0
-          .intro-date-text
-            top: 90px
-            height: 90px
-          #form-content
-            max-width: 100%
-            .content-button-container
-              .submit-button
-                font-size: 1em
-            .form-item
-              .content-title
-                font-size: 1em
 
 
 
