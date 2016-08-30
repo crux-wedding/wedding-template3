@@ -12,7 +12,7 @@ main.init = function(){
 
 main.onFormSubmit = function (){
     $("#form-content").submit(function(){
-       $("#ss-submit").attr("disabled", true);
+        $("#ss-submit").attr("disabled", true);
         setTimeout(function(){
             $("#ss-submit").attr("disabled", false);
         }, 1000);
@@ -115,6 +115,19 @@ main.onNavbarScroll = function(){
         }
     });
 
+    $(document).ready(function () {
+        if ($(document).scrollTop() > 50 && $(document).width() >= 992) {
+            $('nav').addClass('navbar-shrink');
+        }
+
+        else if ($(document).width() <= 991){
+            $('nav').addClass('navbar-shrink');
+        }
+        else {
+            $('nav').removeClass('navbar-shrink');
+        }
+    })
+
     if ($(document).width() <= 991) {
         $('nav').addClass('navbar-shrink');
     }
@@ -127,26 +140,28 @@ main.onIconTransition = function() {
 }
 
 main.initCountDown = function(){
-    $('.right-section').final_countdown({
-        start: new Date("July 14, 2016 12:00:00").getTime() / 1000,
-        end: new Date("September 22, 2016 2:00:00").getTime() / 1000,
-        now: new Date().getTime() / 1000,
-        seconds: {
-            borderColor: 'white',
-            borderWidth: '2'
-        },
-        minutes: {
-            borderColor: 'white',
-            borderWidth: '2'
-        },
-        hours: {
-            borderColor: 'white',
-            borderWidth: '2'
-        },
-        days: {
-            borderColor: 'white',
-            borderWidth: '2'
+    // var beforeWedding = new Date('2016/04/24 15:01:50');
+    var beforeWedding = new Date('2016/12/05');
+    $('#countdown-day').countdown(beforeWedding, {elapse: true}).on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime('<span class="countdown-number">%-D</span>'));
+        if(event.elapsed){
+            $("#countdown .header-text").text("Forever and Counting");
         }
+        else{
+            $("#countdown .header-text").text("How long do we have to wait");
+        }
+    });
+
+    $('#countdown-hour').countdown(beforeWedding, {elapse: true}).on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime('<span class="countdown-number">%-H</span>'));
+    });
+
+    $('#countdown-minute').countdown(beforeWedding, {elapse: true}).on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime('<span class="countdown-number">%-M</span>'));
+    });
+
+    $('#countdown-second').countdown(beforeWedding, {elapse: true}).on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime('<span class="countdown-number">%-S</span>'));
     });
 }
 

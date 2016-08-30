@@ -8,10 +8,41 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: /wedding-template3/
 url: crux-wedding.github.io
 
+cover:
+  couple-name: "Mark & Angela"
+  groom-initial: M
+  bride-initial: A
+  wedding-date: "July 20, 2017"
 
 our-story:
-  content-description: "The most obvious phyiscal phenomenon that is directly affected by the gravity of the moon are the tides of the ocean. The tides are an integral part of how maritime life is regulated and the comings and goings of the fishing world in coastal communities. But not very many people know that at certain times of the year when the orbits of the earth bring the sun and moon into right alignment."
+  content-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum fugit, sed quia consequuntur magni dolores eos qui ratione  labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum fugit, sed quia consequuntur magni dolores eos qui ratione  labore et dolore magnam aliquam quaerat voluptatem."
 
+wedding-details:
+  ceremony:
+    ceremony-day: "Saturday"
+    ceremony-date: "June 24"
+    ceremony-time: "6:00 PM"
+
+  reception:
+    reception-day: "Saturday"
+    reception-date: "June 24"
+    reception-time: "2:00 PM"
+
+  brunch:
+    brunch-day: "Saturday"
+    brunch-date: "June 24"
+    brunch-time: "2:00 PM"
+
+venue:
+  wedding-location: "Our Lady of Peace and Good Voyage Shrine Antipolo City, Metro Manila Philippines"
+
+gallery:
+  - image: "https://res.cloudinary.com/design-studio/image/upload/wedding-template/gallery/image-1.jpg"
+  - image: "https://res.cloudinary.com/design-studio/image/upload/wedding-template/gallery/image-2.jpg"
+  - image: "https://res.cloudinary.com/design-studio/image/upload/wedding-template/gallery/image-3.jpg"
+  - image: "https://res.cloudinary.com/design-studio/image/upload/wedding-template/gallery/image-4.jpg"
+  - image: "https://res.cloudinary.com/design-studio/image/upload/wedding-template/gallery/image-5.jpg"
+  - image: "https://res.cloudinary.com/design-studio/image/upload/wedding-template/gallery/image-6.jpg"
 
 # Build settings
 markdown: kramdown

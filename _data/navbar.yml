@@ -1,0 +1,15 @@
+- id: 2
+  name: Our Story
+  url: our-story
+
+- id: 3
+  name: Venue
+  url: venue
+
+- id: 4
+  name: Gallery
+  url: gallery
+
+- id: 5
+  name: RSVP
+  url: rsvp

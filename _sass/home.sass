@@ -6,88 +6,60 @@ html,body
 
 //Global
 .stylized
-  font-family: 'BELLABOOK-Regular','sans-serif'
-  color: #242424
-
-
-.stylized-header
-  font-family: 'BELLABOOK-Regular','sans-serif'
-  color: #242424
-
-
-.section-header
-  text-transform: uppercase
+  font-family: 'Great-day-personal-use','sans-serif'
+  color: #4d3e6e
 
 .no-gutter
   padding-left: 0
   padding-right: 0
 
 #cover
-  background-color: #fef9d3
   height: 100vh
-  .container
+  .container-fluid
     height: inherit
-    .intro-text-container
-      text-align: center
-      letter-spacing: 20px
+    .intro-cover
       position: relative
       top: 50%
       transform: translateY(-50%)
       -moz-transform: translateY(-50%)
       -ms-transform: translateY(-50%)
       -o-transform: translateY(-50%)
+      background-image: url('img/cover-image.png')
+      background-position: center center
+      background-repeat: no-repeat
+      padding: 400px 0
+      background-size: 50%
       .intro-header
-        .into-header-text
-          color: #242424
-          font-size: 4.5em
-          word-break: break-word
-          line-height: 150px
-      .caption
-        margin: 30px 0
-        color: #242424
-        font-size: 2.5em
-        img
-          display: block
-          margin-left: auto
-          margin-right: auto
-          padding-bottom: 5%
-        .intro-date
-          line-height: 2em
-          display: block
-          font-family: 'Gotham-Light'
-        .intro-location
-          display: block
-          margin-top: 15px
-          font-family: 'Gotham-Medium'
-      .intro-button-container
-        margin: 30px 0
-        .intro-button
-          background-color: white
-          color: black
-          font-size: 16px
-          display: block
-          width: fit-content
-          padding: 30px 60px
-          text-decoration: none
-          transition: all 0.3s ease
-          -webkit-transition: all 0.3s ease
-          -o-transition: all 0.3s ease
+        .intro-text
+          font-size: 34px
+          text-align: center
+      .intro-couple
+        margin: 40px 0
+        .intro-text
+          font-size: 64px
+          letter-spacing: 5px
+          text-align: center
+          .separator
+            font-size: 38px
+            font-family: "Gotham-Light","sans-serif"
+      .intro-date
+        .intro-text
+          font-size: 24px
+          text-align: center
 
-#the-beginning
+
+#our-story
   position: relative
   height: 100vh
+  background-color: #f8eef8
   .section-container
     height: inherit
     .left-section
+      float: left
+      height: inherit
+      width: 50%
       padding-left: 15px
       padding-right: 15px
-      float: left
-      width: 50%
-      background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8) ), url('img/couple-bg.jpg')
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center center
-      height: inherit
       .content-container
         position: relative
         top: 50%
@@ -95,12 +67,39 @@ html,body
         -moz-transform: translateY(-50%)
         -ms-transform: translateY(-50%)
         -o-transform: translateY(-50%)
+        .image-text
+          height: 150px
+          position: absolute
+          left: 0
+          right: 0
+          margin-left: auto
+          margin-right: auto
+          z-index: 5
+          top: 50%
+          transform: translateY(-50%)
+          -moz-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
+          -o-transform: translateY(-50%)
+        .overlay
+          height: 400px
+          position: absolute
+          width: 400px
+          background-color: rgba(0,0,0,0.5)
+          border-radius: 50%
+          margin-left: auto
+          margin-right: auto
+          left: 0
+          right: 0
+        .couple-image
+          margin: 30px 0
+          .section-image
+            height: 400px
+            width: 400px
         .content-header
           display: block
           margin-left: auto
           margin-right: auto
     .right-section
-      background-color: #fef9d3
       padding-left: 15px
       padding-right: 15px
       float: left
@@ -113,26 +112,85 @@ html,body
         -moz-transform: translateY(-50%)
         -ms-transform: translateY(-50%)
         -o-transform: translateY(-50%)
-        .content-header
-          font-size: 2.5em
-          text-align: center
-          letter-spacing: 20px
+        .section-header
+          display: table
+          margin: 0 auto
+          .section-image
+            display: inline-block
+            height: 50px
+            margin-right: 5px
+          .header-text
+            display: inline-block
+            font-size: 2.5em
+            text-align: center
+            letter-spacing: 5px
         .content-description
-          max-width: 80%
-          margin: 50px auto 0
+          margin: 50px 0
           .content-text
-            color: #777777
-            font-size: 1.5em
+            color: black
+            font-size: 18px
             line-height: 2.5em
 
+#countdown
+  position: relative
+  margin: 70px auto
+  padding: 30px 0
+  background-color: white
+  .section-header
+    display: table
+    margin: 0 auto
+    .section-image
+      display: inline-block
+      height: 50px
+      margin-right: 5px
+    .header-text
+      display: inline-block
+      font-size: 2.5em
+      text-align: center
+      letter-spacing: 5px
+  #clock
+    .item-list
+      margin: 30px 0
+      .item-container
+        position: relative
+        border: 2px solid #4d3e6e
+        border-radius: 50%
+        padding: 75px 5px
+        height: 220px
+        width: 220px
+        color: #8485c5
+        margin: 0 auto
+        text-transform: lowercase
+        .countdown-name
+          display: block
+          text-align: center
+          padding: 50px 0
+          font-size: 28px
+        .countdown-value
+          position: relative
+          display: block
+          text-align: center
+          margin-left: auto
+          margin-right: auto
+          .countdown-number
+            font-size: 44px
+            position: absolute
+            top: 50%
+            left: 0
+            right: 0
+            transform: translateY(-50%)
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
 
 #wedding-detail
   position: relative
   height: 100vh
+  background-color: #f8eef8
   .section-container
     height: inherit
     .left-section
-      background-color: #fef9d3
       padding-left: 15px
       padding-right: 15px
       float: left
@@ -145,29 +203,32 @@ html,body
         -moz-transform: translateY(-50%)
         -ms-transform: translateY(-50%)
         -o-transform: translateY(-50%)
-        .content-header
-          font-size: 2.5em
-          text-align: center
-          letter-spacing: 20px
+        .section-header
+          display: table
+          margin: 0 auto
+          .section-image
+            display: inline-block
+            height: 50px
+            margin-right: 5px
+          .header-text
+            display: inline-block
+            font-size: 2.5em
+            text-align: center
+            letter-spacing: 5px
         .content-description
-          max-width: 80%
-          margin: 50px auto 0
-          .content-text
-            color: #777777
-            font-size: 1.5em
-            line-height: 2.5em
-
+          margin: 50px 0
+          text-align: center
+          .section-content
+            margin: 30px 0
+            .section-title
+              color: #5e4da3
 
     .right-section
+      float: left
+      height: inherit
+      width: 50%
       padding-left: 15px
       padding-right: 15px
-      float: left
-      width: 50%
-      background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8) ), url('img/save-the-date-bg.jpg')
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center center
-      height: inherit
       .content-container
         position: relative
         top: 50%
@@ -175,100 +236,138 @@ html,body
         -moz-transform: translateY(-50%)
         -ms-transform: translateY(-50%)
         -o-transform: translateY(-50%)
+        .image-text
+          height: 150px
+          position: absolute
+          left: 0
+          right: 0
+          margin-left: auto
+          margin-right: auto
+          z-index: 5
+          top: 50%
+          transform: translateY(-50%)
+          -moz-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
+          -o-transform: translateY(-50%)
+        .overlay
+          height: 400px
+          position: absolute
+          width: 400px
+          background-color: rgba(0,0,0,0.5)
+          border-radius: 50%
+          margin-left: auto
+          margin-right: auto
+          left: 0
+          right: 0
+        .couple-image
+          padding: 10px 0
+          .section-image
+            height: 400px
+            width: 400px
         .content-header
           display: block
           margin-left: auto
           margin-right: auto
+
+#venue
+  position: relative
+  height: 700px
+  .container-fluid
+    height: inherit
+    #map
+      position: relative
+      height: inherit
+      #info-window-container
+        width: 300px
+        padding: 10px 15px 20px
+        .section-header
+          text-transform: capitalize
+        .info-window-content
+          address
+            font-size: 16px
+            line-height: 25px
+
+#gallery
+  padding-top: 50px
+  padding-bottom: 50px
+  .section-header
+    display: table
+    margin: 0 auto
+    .section-image
+      display: inline-block
+      height: 50px
+      margin-right: 5px
+    .header-text
+      display: inline-block
+      font-size: 2.5em
+      text-align: center
+      letter-spacing: 5px
+  .content-container
+    margin-top: 50px
+    .gallery-image-container
+      overflow: hidden
+      .gallery-image
+        padding: 5px 10px
+        object-fit: cover
+        object-position: 50% 50%
+
 
 
 #rsvp
   position: relative
-  height: 100vh
-  .section-container
-    height: inherit
-    .left-section
-      padding-left: 15px
-      padding-right: 15px
-      float: left
-      width: 50%
-      background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('img/couple-bg.jpg')
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center center
-      height: inherit
-      .content-container
-        position: relative
-        top: 50%
-        transform: translateY(-50%)
-        -moz-transform: translateY(-50%)
-        -ms-transform: translateY(-50%)
-        -o-transform: translateY(-50%)
-        .content-header
-          display: block
-          margin-left: auto
-          margin-right: auto
-          img
-            position: absolute
-            height: 100px
-            right: 0
-
-    .right-section
-      background-color: #fef9d3
-      padding-left: 15px
-      padding-right: 15px
-      float: left
-      width: 50%
-      height: inherit
-      .content-container
-        position: relative
-        max-width: 85%
-        min-width: 85%
-        margin: 0 auto
-        top: 50%
-        transform: translateY(-50%)
-        -moz-transform: translateY(-50%)
-        -ms-transform: translateY(-50%)
-        -o-transform: translateY(-50%)
-        .content-header
-          text-align: center
-          letter-spacing: 5px
-        .intro-date-text
-          position: absolute
-          right: 0
-          top: 0
-          height: 110px
-        #form-content
-          max-width: 80%
-          margin-left: inherit
-          margin-right: auto
-          font-family: Gotham-Medium
-          .form-item
-            .content-title
-              font-size: 1.5em
-              letter-spacing: 2px
-              display: block
-            .content-input
-              display: block
-              border-radius: 25px
-              border: 2px solid #dbb868
-              padding: 20px
-              height: 65px
-              background-color: transparent
-              box-shadow: none
-              -webkit-appearance: none
-              margin-bottom: 45px
-          .content-button-container
-            .submit-button
-              display: block
-              border-radius: 25px
-              border: transparent
-              padding: 20px
-              height: 65px
-              width: 100%
-              background-color: #dbb868
-              box-shadow: none
-              -webkit-appearance: none
-              margin-bottom: 45px
+  padding: 30px 0
+  background-color: #f8eef8
+  .section-header
+    display: table
+    margin: 0 auto
+    .section-image
+      display: inline-block
+      height: 50px
+      margin-right: 5px
+    .header-text
+      display: inline-block
+      font-size: 2.5em
+      text-align: center
+      letter-spacing: 5px
+  #form-content
+    .form-item
+      max-width: 50%
+      min-width: 50%
+      margin: 30px auto
+      .content-title
+        padding-bottom: 5px
+        font-size: 1.2em
+        display: block
+        color: #5e4da3
+        text-transform: capitalize
+      .content-input
+        background-color: transparent
+        outline: none
+        border: 2px solid #5e4da3
+        padding: 30px 22px
+        border-radius: 12px
+        box-shadow: none
+        -webkit-box-shadow: none
+        color: #5e4da3
+      .content-number
+        color: #5e4da3
+        border: 2px solid #5e4da3
+      .content-select
+        padding: 0 22px
+        height: 64px
+        border: 2px solid #5e4da3
+        border-radius: 12px
+    .content-button-container
+      margin: 50px auto
+      max-width: 50%
+      min-width: 50%
+      #ss-submit
+        color: white
+        padding: 25px 30px
+        line-height: 0
+        border-radius: 12px
+        border: none
+        background-color: #5e4da3
 
 
 

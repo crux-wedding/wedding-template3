@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="section-header">
+        <img class="section-image" src="img/feather.png"/>
+        <h2 class="header-text stylized">Gallery</h2>
+    </div>
+    <div class="content-container">
+       {% for item in site.gallery %}
+       <div class="gallery-image-container col-md-6 col-sm-6 col-xs-12 no-gutter">
+           <img src="{{ item.image }}" class="gallery-image"/>
+       </div>
+       {% endfor %}
+    </div>
+</div>
