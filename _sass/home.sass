@@ -528,9 +528,212 @@ html,body
             display: block
             margin-left: auto
             margin-right: auto
-
   #venue
     height: 450px
+
+@media (max-width: $screen-sm-max) and (orientation: landscape)
+  #cover
+    height: auto
+    .container-fluid
+      .intro-cover
+        top: 0
+        transform: none
+        -moz-transform: none
+        -ms-transform: none
+        -o-transform: none
+        padding: 245px 0
+        background-size: 70%
+        .intro-header
+          .intro-text
+            font-size: 18px
+        .intro-couple
+          .intro-text
+            font-size: 38px
+        .intro-date
+          .intro-text
+            font-size: 18px
+
+@media (max-width: $screen-xs-max)
+  #cover
+    .container-fluid
+      .intro-cover
+        background-size: 99%
+        .intro-header
+          .intro-text
+            font-size: 18px
+        .intro-couple
+          .intro-text
+            font-size: 38px
+        .intro-date
+          .intro-text
+            font-size: 18px
+
+  #our-story
+    .section-container
+      .left-section
+        .content-container
+          .top-border
+            .section-image
+              height: 50px
+          .couple-image
+            .overlay
+              width: 320px
+              height: 320px
+            .section-image
+              width: 320px
+              height: 320px
+            .image-text
+              height: 120px
+          .bottom-border
+            .section-image
+              height: 50px
+
+  #countdown
+    .section-header
+      .header-text
+        font-size: 2.2em
+    #clock
+      .item-list
+        .item-container
+          width: 200px
+          height: 200px
+          .countdown-value
+            .countdown-number
+              font-size: 34px
+          .countdown-name
+            font-size: 24px
+
+  #wedding-detail
+    .section-container
+      .left-section
+        .content-container
+          padding: 50px 0
+          .top-border
+            .section-image
+              height: 50px
+          .couple-image
+            .overlay
+              width: 320px
+              height: 320px
+            .section-image
+              width: 320px
+              height: 320px
+            .image-text
+              height: 120px
+          .bottom-border
+            .section-image
+              height: 50px
+
+  #rsvp
+    #form-content
+      .form-item
+        max-width: 90%
+        min-width: 90%
+      .content-button-container
+        max-width: 90%
+        min-width: 90%
+
+@media (max-width: 568px)
+  #cover
+    height: auto
+    .container-fluid
+      .intro-cover
+        top: 0
+        transform: none
+        -moz-transform: none
+        -ms-transform: none
+        -o-transform: none
+        background-size: 180%
+        padding: 240px 0
+
+  #our-story
+    .section-container
+      .left-section
+        padding-bottom: 30px
+        .content-container
+          .couple-image
+            .overlay
+              height: 280px
+              width: 280px
+            .section-image
+              height: 280px
+              width: 280px
+
+      .right-section
+        padding-top: 30px
+        .content-container
+          .section-header
+            display: block
+            .section-image
+              display: block
+              max-width: 100%
+              margin-left: auto
+              margin-right: auto
+            .header-text
+              text-align: center
+              display: block
+          .content-description
+            .content-text
+              max-width: 95%
+
+  #countdown
+    .section-header
+      display: block
+      .section-image
+        display: block
+        max-width: 100%
+        margin-left: auto
+        margin-right: auto
+      .header-text
+        text-align: center
+        display: block
+
+  #wedding-detail
+    .section-container
+      .left-section
+        .content-container
+          padding: 30px 0
+          .section-header
+            display: block
+            .section-image
+              display: block
+              max-width: 100%
+              margin-left: auto
+              margin-right: auto
+            .header-text
+              text-align: center
+              display: block
+          .couple-image
+            .overlay
+              height: 280px
+              width: 280px
+            .section-image
+              height: 280px
+              width: 280px
+  #gallery
+    .content-container
+      .gallery-image-container
+        overflow: auto
+        .gallery-image
+          max-width: 100%
+
+@media (max-width: $screen-xs)
+  #cover
+    .container-fluid
+      .intro-cover
+        background-size: 180%
+        padding: 200px 0
+
+
+
+
+
+
+
+
+
+
+
 
 
 
